@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(2, 148, 26, 0.692);
+}
+/* BAŞLIK */
+header h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+/* LİSTE ÖĞELERİ */
+ul {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+ul li {
+  margin: 5px 10px;
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+li:hover {
+  background-color: rgb(46, 167, 22);
+}
+/* MAİN ALANI */
+
+.img-container {
+  background-color: whitesmoke;
+  padding: 10px;
+  z-index: 1;
+}
+.img-class {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.img-class div {
+  border: 2px solid white;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px;
+  position: relative;
+}
+main img {
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
+}
+/* BUTONLAR */
+button {
+  background-color: rgba(218, 213, 213, 0.726);
+  color: black;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 10px;
+  padding: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translate(-50%, -50%);
+  cursor: zoom-in;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+div button:hover {
+  opacity: 1;
+}
+/* FOOTER BÖLÜMÜ */
+.last-div {
+  margin-top: 15%;
+}
+.footer-class {
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(2, 148, 26, 0.692);
+}
